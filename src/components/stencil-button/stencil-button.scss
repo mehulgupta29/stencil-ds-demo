@@ -1,0 +1,275 @@
+@function pixel-to-rem($pixel) {
+	@return ($pixel/16) + rem;
+}
+
+//defaults to primary type
+@mixin type(
+	$background-color: #0000f3,
+	$color: #ffffff,
+	$border-color: null,
+	$hover-background-color: #6e87ff,
+	$hover-text-color: #ffffff,
+	$active-background-color: #0000c3,
+	$active-text-color: #ffffff,
+	$disabled-background-color: #dbdde1,
+	$disabled-text-color: #a5aab3,
+	$disabled-border-color: null
+) {
+	background-color: $background-color;
+	color: $color;
+
+	@if ($border-color !=null) {
+		box-shadow: 0 0 0 pixel-to-rem(1) $border-color inset;
+	}
+
+	&:hover {
+		background-color: $hover-background-color;
+		color: $hover-text-color;
+
+		// border: inherit;
+		@if ($border-color !=null) {
+			box-shadow: 0 0 0 pixel-to-rem(1) $hover-background-color inset;
+		}
+	}
+
+	&:active {
+		background-color: $active-background-color;
+		color: $active-text-color;
+
+		// border: inherit;
+		@if ($border-color !=null) {
+			box-shadow: 0 0 0 pixel-to-rem(1) $active-background-color inset;
+		}
+
+		// box-shadow: 0 0 0 pixel-to-rem(1) $active-background-color inset;
+	}
+
+	&:disabled {
+		background-color: $disabled-background-color;
+
+		@if ($disabled-border-color !=null) {
+			// border: pixel-to-rem(1) solid $disabled-border-color;
+			box-shadow: 0 0 0 pixel-to-rem(1) $disabled-border-color inset;
+		}
+
+		color: $disabled-text-color;
+	}
+}
+
+//defaults to regular size
+@mixin label-padding($isIcon: null) {
+	&.stencil-button__label--small {
+		@if ($isIcon==null) {
+			padding-left: pixel-to-rem(4);
+		} @else {
+			padding-right: pixel-to-rem(4);
+		}
+	}
+
+	&.stencil-button__label--regular {
+		@if ($isIcon==null) {
+			padding-left: pixel-to-rem(8);
+		} @else {
+			padding-right: pixel-to-rem(8);
+		}
+	}
+
+	&.stencil-button__label--large {
+		@if ($isIcon==null) {
+			padding-left: pixel-to-rem(12);
+		} @else {
+			padding-right: pixel-to-rem(12);
+		}
+	}
+
+	&.stencil-button__label--block {
+		@if ($isIcon==null) {
+			padding-left: pixel-to-rem(12);
+		} @else {
+			padding-right: pixel-to-rem(12);
+		}
+	}
+}
+
+//defaults to regular size
+@mixin size($min-height: 32, $padding: 16, $font-size: 13, $icon-padding: 8) {
+	min-height: pixel-to-rem($min-height);
+	padding: pixel-to-rem(0) pixel-to-rem($padding);
+	font-size: pixel-to-rem($font-size);
+
+	@if ($icon-padding !=null) {
+		&.stencil-button__icon-only {
+			padding: pixel-to-rem(0) pixel-to-rem($icon-padding);
+		}
+	}
+
+	@content;
+}
+
+.stencil-button__primary {
+	@include type(
+		#0000f3,
+		#ffffff,
+		null,
+		#6e87ff,
+		#ffffff,
+		#0000c3,
+		#ffffff,
+		#dbdde1,
+		#a5aab3
+	);
+}
+
+.stencil-button__secondary {
+	@include type(
+		#ffffff,
+		#0000f3,
+		#0000f3,
+		#6e87ff,
+		#ffffff,
+		#0000c3,
+		#ffffff,
+		#ffffff,
+		#a5aab3,
+		#dbdde1
+	);
+}
+
+.stencil-button__tertiary {
+	@include type(
+		rgba(0, 0, 0, 0),
+		#0000f3,
+		null,
+		#f5f8ff,
+		#0000f3,
+		#e6ecff,
+		#0000f3,
+		rgba(0, 0, 0, 0),
+		#a5aab3,
+		null
+	);
+}
+
+.stencil-button__primary-danger {
+	@include type(
+		#d90400,
+		#ffffff,
+		null,
+		#ff2825,
+		#ffffff,
+		#bc0300,
+		#ffffff,
+		#dbdde1,
+		#a5aab3,
+		null
+	);
+}
+
+.stencil-button__secondary-danger {
+	@include type(
+		#ffffff,
+		#d90400,
+		#d90400,
+		#ff2825,
+		#ffffff,
+		#bc0300,
+		#ffffff,
+		#dbdde1,
+		#a5aab3,
+		#dbdde1
+	);
+}
+
+.stencil-button__tertiary-danger {
+	@include type(
+		undefined,
+		#d90400,
+		undefined,
+		#ffeded,
+		#d90400,
+		#ffbbbb,
+		#d90400,
+		rgba(0, 0, 0, 0),
+		#a5aab3,
+		undefined
+	);
+}
+
+.stencil-button__container {
+	display: inline-block;
+	width: fit-content;
+}
+
+.stencil-button {
+	box-sizing: border-box;
+	padding: pixel-to-rem(0);
+	margin: pixel-to-rem(0);
+	border-radius: pixel-to-rem(2);
+	border-width: 0;
+	font-family: inherit;
+	font-weight: 400;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	outline: none;
+
+	& svg.icon {
+		height: 1rem;
+		width: 1rem;
+	}
+
+	&:disabled {
+		cursor: default;
+	}
+}
+
+.stencil-button__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.stencil-button__label {
+	@include label-padding(null);
+
+	&.stencil-button__icon--right {
+		padding-left: 0;
+		@include label-padding(icon);
+	}
+}
+
+.stencil-button__xsmall {
+	@include size(16, 4, 11, null);
+}
+
+.stencil-button__small {
+	@include size(24, 8, 12, 4);
+}
+
+.stencil-button__regular {
+	@include size(32, 16, 13, 8);
+}
+
+.stencil-button__large {
+	@include size(40, 24, 14, 12);
+}
+
+.stencil-button__block {
+	@include size(48, 0, 14, null) {
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+.stencil-button__split-container {
+	display: inline-flex;
+}
+
+.stencil-button__split-button--left {
+	border-radius: pixel-to-rem(2) 0 0 pixel-to-rem(2);
+}
+
+.stencil-button__split-button--right {
+	border-radius: 0 pixel-to-rem(2) pixel-to-rem(2) 0;
+	padding: 0 pixel-to-rem(8);
+	margin-left: pixel-to-rem(1);
+}

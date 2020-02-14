@@ -1,0 +1,306 @@
+@mixin icon-color-circle($color, $hover-pressed-color: $color) {
+	& svg {
+		& circle {
+			fill: $color;
+		}
+
+		&:hover {
+			& circle {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& circle {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-circle-stroke($color, $hover-pressed-color: $color) {
+	& svg {
+		& circle {
+			stroke: $color;
+		}
+
+		&:hover {
+			& circle {
+				stroke: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& circle {
+				stroke: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-text($color, $hover-pressed-color: $color) {
+	& svg {
+		& text {
+			fill: $color;
+		}
+
+		&:hover {
+			& text {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& text {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-polygon($color, $hover-pressed-color: $color) {
+	& svg {
+		& polygon {
+			fill: $color;
+		}
+
+		&:hover {
+			& polygon {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& polygon {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-polygon-stroke($color, $hover-pressed-color: $color) {
+	& svg {
+		& polygon {
+			stroke: $color;
+		}
+
+		&:hover {
+			& polygon {
+				stroke: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& polygon {
+				stroke: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-polyline($color, $hover-pressed-color: $color) {
+	& svg {
+		& polyline {
+			fill: $color;
+		}
+
+		&:hover {
+			& polyline {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& polyline {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-polyline-stroke($color, $hover-pressed-color: $color) {
+	& svg {
+		& polyline {
+			stroke: $color;
+		}
+
+		&:hover {
+			& polyline {
+				stroke: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& polyline {
+				stroke: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-path($color, $hover-pressed-color: $color) {
+	& svg {
+		& path {
+			fill: $color;
+		}
+
+		&:hover {
+			& path {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& path {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-path-stroke($color, $hover-pressed-color: $color) {
+	& svg {
+		& path {
+			stroke: $color;
+		}
+
+		&:hover {
+			& path {
+				stroke: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& path {
+				stroke: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-path-Shape($color, $hover-pressed-color: $color) {
+	& svg {
+		& path#Shape {
+			fill: $color;
+		}
+
+		&:hover {
+			& path#Shape {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& path#Shape {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-path-Combined-Shape($color, $hover-pressed-color: $color) {
+	& svg {
+		& path#Combined-Shape {
+			fill: $color;
+		}
+
+		&:hover {
+			& path#Combined-Shape {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& path#Combined-Shape {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-rect-Rectangle($color, $hover-pressed-color: $color) {
+	& svg {
+		& rect#Rectangle {
+			fill: $color;
+		}
+
+		&:hover {
+			& rect#Rectangle {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& rect#Rectangle {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-rect-stroke-Rectangle($color, $hover-pressed-color: $color) {
+	& svg {
+		& rect#Rectangle {
+			stroke: $color;
+		}
+
+		&:hover {
+			& rect#Rectangle {
+				stroke: $hover-pressed-color;
+			}
+		}
+
+		&:active {
+			& rect#Rectangle {
+				stroke: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin icon-color-path-icon-alert($color, $hover-pressed-color: $color) {
+	& svg {
+		& path#Combined-Shape {
+			fill: $color;
+		}
+
+		&:hover {
+			& path#Combined-Shape {
+				fill: $hover-pressed-color;
+			}
+		}
+
+		&:active#Combined-Shape {
+			& path {
+				fill: $hover-pressed-color;
+			}
+		}
+	}
+}
+
+@mixin spin() {
+	-webkit-animation: spin 1s linear infinite;
+	/* Safari */
+	animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

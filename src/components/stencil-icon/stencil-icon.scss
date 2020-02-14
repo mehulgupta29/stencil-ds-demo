@@ -1,0 +1,83 @@
+@import './stencil-icon-mixins.scss';
+
+.stencil-icon__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+//################################################## action ########################################################
+
+.stencil-icon__action--primary {
+	@include icon-color-circle(#1b1d20, #0000f3);
+
+	&.disabled {
+		@include icon-color-circle(#c0c4ca);
+	}
+}
+
+.stencil-icon__action--secondary {
+	@include icon-color-circle(#6d7581, #0000f3);
+
+	&.disabled {
+		@include icon-color-circle(#c0c4ca);
+	}
+}
+
+.stencil-icon__action--boxed {
+	@include icon-color-circle(#1b1d20, #0000f3);
+	background-color: #f1f2f4;
+
+	&:hover {
+		background-color: #e6ecff;
+	}
+
+	&:active {
+		background-color: #e6ecff;
+	}
+
+	&.disabled {
+		@include icon-color-circle(#c0c4ca);
+		background-color: #f1f2f4;
+	}
+}
+
+.stencil-icon__action--non-action {
+	@include icon-color-circle(#a5aab3);
+
+	&.disabled {
+		@include icon-color-circle(#c0c4ca);
+	}
+}
+
+.stencil-icon__action--primary-button {
+	@include icon-color-circle(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle(#c0c4ca);
+	}
+}
+
+.stencil-icon__action--secondary-button {
+	@include icon-color-circle(#0000f3);
+
+	&.disabled {
+		@include icon-color-circle(#c0c4ca);
+	}
+}
+
+.stencil-icon__action--secondary-button-hover {
+	@include icon-color-circle(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle(#c0c4ca);
+	}
+}
+
+.stencil-icon__action--tertiary-button {
+	@include icon-color-circle(#0000f3);
+
+	&.disabled {
+		@include icon-color-circle(#c0c4ca);
+	}
+}
