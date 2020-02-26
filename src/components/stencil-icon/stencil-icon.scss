@@ -9,44 +9,47 @@
 //################################################## action ########################################################
 
 .stencil-icon__action--primary {
-	@include icon-color-circle(#1b1d20, #0000f3);
+	@include icon-color-circle(#000000, #bc0300);
 
 	&.disabled {
-		@include icon-color-circle(#c0c4ca);
+		@include icon-color-circle(#ff5755);
 	}
 }
 
 .stencil-icon__action--secondary {
-	@include icon-color-circle(#6d7581, #0000f3);
+	@include icon-color-circle(
+		#bc0300,
+		#bc0300
+	);
 
 	&.disabled {
-		@include icon-color-circle(#c0c4ca);
+		@include icon-color-circle(#ff5755);
 	}
 }
 
 .stencil-icon__action--boxed {
-	@include icon-color-circle(#1b1d20, #0000f3);
-	background-color: #f1f2f4;
+	@include icon-color-circle(#000000, #bc0300);
+	background-color: #fff6f6;
 
 	&:hover {
-		background-color: #e6ecff;
+		background-color: #ff8a89;
 	}
 
 	&:active {
-		background-color: #e6ecff;
+		background-color: #ff8a89;
 	}
 
 	&.disabled {
-		@include icon-color-circle(#c0c4ca);
-		background-color: #f1f2f4;
+		@include icon-color-circle(#ff5755);
+		background-color: #fff6f6;
 	}
 }
 
 .stencil-icon__action--non-action {
-	@include icon-color-circle(#a5aab3);
+	@include icon-color-circle(#ff2825);
 
 	&.disabled {
-		@include icon-color-circle(#c0c4ca);
+		@include icon-color-circle(#ff5755);
 	}
 }
 
@@ -54,15 +57,15 @@
 	@include icon-color-circle(#ffffff);
 
 	&.disabled {
-		@include icon-color-circle(#c0c4ca);
+		@include icon-color-circle(#ff5755);
 	}
 }
 
 .stencil-icon__action--secondary-button {
-	@include icon-color-circle(#0000f3);
+	@include icon-color-circle(#bc0300);
 
 	&.disabled {
-		@include icon-color-circle(#c0c4ca);
+		@include icon-color-circle(#ff5755);
 	}
 }
 
@@ -70,14 +73,2302 @@
 	@include icon-color-circle(#ffffff);
 
 	&.disabled {
-		@include icon-color-circle(#c0c4ca);
+		@include icon-color-circle(#ff5755);
 	}
 }
 
 .stencil-icon__action--tertiary-button {
-	@include icon-color-circle(#0000f3);
+	@include icon-color-circle(#bc0300);
 
 	&.disabled {
-		@include icon-color-circle(#c0c4ca);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+//################################################## actionarrow-back ##############################################
+
+.stencil-icon__actionarrow-back--primary {
+	@include icon-color-polygon(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-back--secondary {
+	@include icon-color-polygon(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-back--boxed {
+	@include icon-color-polygon(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__actionarrow-back--non-action {
+	@include icon-color-polygon(#ff2825);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-back--primary-button {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-back--secondary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-back--secondary-button-hover {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-back--tertiary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+//################################################## actionarrow-down ##############################################
+
+.stencil-icon__actionarrow-down--primary {
+	@include icon-color-polygon(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-down--secondary {
+	@include icon-color-polygon(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-down--boxed {
+	@include icon-color-polygon(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__actionarrow-down--non-action {
+	@include icon-color-polygon(#ff2825);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-down--primary-button {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-down--secondary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-down--secondary-button-hover {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-down--tertiary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+//################################################## actionarrow-forward ##############################################
+
+.stencil-icon__actionarrow-forward--primary {
+	@include icon-color-polygon(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-forward--secondary {
+	@include icon-color-polygon(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-forward--boxed {
+	@include icon-color-polygon(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__actionarrow-forward--non-action {
+	@include icon-color-polygon(#ff2825);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-forward--primary-button {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-forward--secondary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-forward--secondary-button-hover {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-forward--tertiary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+//################################################## actionarrow-up ##############################################
+
+.stencil-icon__actionarrow-up--primary {
+	@include icon-color-polygon(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-up--secondary {
+	@include icon-color-polygon(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-up--boxed {
+	@include icon-color-polygon(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__actionarrow-up--non-action {
+	@include icon-color-polygon(#ff2825);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-up--primary-button {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-up--secondary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-up--secondary-button-hover {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__actionarrow-up--tertiary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+//################################################## add ##############################################
+
+.stencil-icon__add--primary {
+	@include icon-color-path-stroke(
+		#000000,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-path-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__add--secondary {
+	@include icon-color-path-stroke(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-path-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__add--boxed {
+	@include icon-color-path-stroke(
+		#000000,
+		#bc0300
+	);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path-stroke(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__add--non-action {
+	@include icon-color-path-stroke(#ff2825);
+
+	&.disabled {
+		@include icon-color-path-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__add--primary-button {
+	@include icon-color-path-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-path-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__add--secondary-button {
+	@include icon-color-path-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-path-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__add--secondary-button-hover {
+	@include icon-color-path-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-path-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__add--tertiary-button {
+	@include icon-color-path-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-path-stroke(#ff5755);
+	}
+}
+
+//################################################## alert-2 ##############################################
+
+.stencil-icon__alert-2--primary {
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--secondary {
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--boxed {
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__alert-2--non-action {
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--primary-button {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--secondary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--secondary-button-hover {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--tertiary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--success {
+	@include icon-color-path(#048119);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--error {
+	@include icon-color-path(#d90400);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-2--warning {
+	@include icon-color-path(#000000);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## alert-bell-subtle ##############################################
+
+.stencil-icon__alert-bell-subtle--primary {
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell-subtle--secondary {
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell-subtle--boxed {
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__alert-bell-subtle--non-action {
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell-subtle--primary-button {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell-subtle--secondary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell-subtle--secondary-button-hover {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell-subtle--tertiary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## alert-bell ##############################################
+
+.stencil-icon__alert-bell--primary {
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell--secondary {
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell--boxed {
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__alert-bell--non-action {
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell--primary-button {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell--secondary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell--secondary-button-hover {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell--tertiary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bell--error {
+	@include icon-color-path(#d90400);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## alert-bold-large ##############################################
+
+.stencil-icon__alert-bold-large--primary {
+	@include icon-color-circle-stroke(
+		#000000,
+		#bc0300
+	);
+	@include icon-color-circle(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.aux-theme-dark .stencil-icon__alert-bold-large--primary {
+	@include icon-color-path(
+		#fff6f6,
+		#fff6f6
+	);
+}
+
+.stencil-icon__alert-bold-large--secondary {
+	@include icon-color-circle-stroke(
+		#bc0300,
+		#bc0300
+	);
+	@include icon-color-circle(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--boxed {
+	@include icon-color-circle-stroke(
+		#000000,
+		#bc0300
+	);
+	@include icon-color-circle(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__alert-bold-large--non-action {
+	@include icon-color-circle-stroke(#ff2825);
+	@include icon-color-circle(#ff2825);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--primary-button {
+	@include icon-color-circle-stroke(#ffffff);
+	@include icon-color-circle(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--secondary-button {
+	@include icon-color-circle-stroke(#bc0300);
+	@include icon-color-circle(#bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--secondary-button-hover {
+	@include icon-color-circle-stroke(#ffffff);
+	@include icon-color-circle(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--tertiary-button {
+	@include icon-color-circle-stroke(#bc0300);
+	@include icon-color-circle(#bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--success {
+	@include icon-color-circle-stroke(#048119);
+	@include icon-color-circle(#048119);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--error {
+	@include icon-color-circle-stroke(#d90400);
+	@include icon-color-circle(#d90400);
+	@include icon-color-path(#ffffff);
+
+	&:hover {
+		@include icon-color-circle-stroke(#ff2825);
+		@include icon-color-circle(#ff2825);
+	}
+
+	&:active {
+		@include icon-color-circle-stroke(#bc0300);
+		@include icon-color-circle(#bc0300);
+	}
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--warning {
+	@include icon-color-circle-stroke(#ffbf0d);
+	@include icon-color-circle(#ffbf0d);
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold-large--informational {
+	@include icon-color-circle-stroke(#000000);
+	@include icon-color-circle(#000000);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+//################################################## alert-bold ##############################################
+
+.stencil-icon__alert-bold--primary {
+	@include icon-color-circle-stroke(
+		#000000,
+		#bc0300
+	);
+	@include icon-color-circle(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.aux-theme-dark .stencil-icon__alert-bold--primary {
+	@include icon-color-path(
+		#fff6f6,
+		#fff6f6
+	);
+}
+
+.stencil-icon__alert-bold--secondary {
+	@include icon-color-circle-stroke(
+		#bc0300,
+		#bc0300
+	);
+	@include icon-color-circle(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold--boxed {
+	@include icon-color-circle-stroke(
+		#000000,
+		#bc0300
+	);
+	@include icon-color-circle(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__alert-bold--non-action {
+	@include icon-color-circle-stroke(#ff2825);
+	@include icon-color-circle(#ff2825);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold--primary-button {
+	@include icon-color-circle-stroke(#ffffff);
+	@include icon-color-circle(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold--secondary-button {
+	@include icon-color-circle-stroke(#bc0300);
+	@include icon-color-circle(#bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold--secondary-button-hover {
+	@include icon-color-circle-stroke(#ffffff);
+	@include icon-color-circle(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold--tertiary-button {
+	@include icon-color-circle-stroke(#bc0300);
+	@include icon-color-circle(#bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold--success {
+	@include icon-color-circle-stroke(#048119);
+	@include icon-color-circle(#048119);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold--error {
+	@include icon-color-circle-stroke(#d90400);
+	@include icon-color-circle(#d90400);
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-bold--warning {
+	@include icon-color-circle-stroke(#ffbf0d);
+	@include icon-color-circle(#ffbf0d);
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-circle(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## alert-subtle-large ##############################################
+
+.stencil-icon__alert-subtle-large--primary {
+	@include icon-color-circle-stroke(
+		#000000,
+		#bc0300
+	);
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--secondary {
+	@include icon-color-circle-stroke(
+		#bc0300,
+		#bc0300
+	);
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--boxed {
+	@include icon-color-circle-stroke(
+		#000000,
+		#bc0300
+	);
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__alert-subtle-large--non-action {
+	@include icon-color-circle-stroke(#ff2825);
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--primary-button {
+	@include icon-color-circle-stroke(#ffffff);
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--secondary-button {
+	@include icon-color-circle-stroke(#bc0300);
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--secondary-button-hover {
+	@include icon-color-circle-stroke(#ffffff);
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--tertiary-button {
+	@include icon-color-circle-stroke(#bc0300);
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--success {
+	@include icon-color-circle-stroke(#048119);
+	@include icon-color-path(#048119);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--error {
+	@include icon-color-circle-stroke(#d90400);
+	@include icon-color-path(#d90400);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle-large--warning {
+	@include icon-color-circle-stroke(#ffbf0d);
+	@include icon-color-path(#ffbf0d);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## alert-subtle ##############################################
+
+.stencil-icon__alert-subtle--primary {
+	@include icon-color-circle-stroke(
+		#000000,
+		#bc0300
+	);
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--secondary {
+	@include icon-color-circle-stroke(
+		#bc0300,
+		#bc0300
+	);
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--boxed {
+	@include icon-color-circle-stroke(
+		#000000,
+		#bc0300
+	);
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__alert-subtle--non-action {
+	@include icon-color-circle-stroke(#ff2825);
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--primary-button {
+	@include icon-color-circle-stroke(#ffffff);
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--secondary-button {
+	@include icon-color-circle-stroke(#bc0300);
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--secondary-button-hover {
+	@include icon-color-circle-stroke(#ffffff);
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--tertiary-button {
+	@include icon-color-circle-stroke(#bc0300);
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--success {
+	@include icon-color-circle-stroke(#048119);
+	@include icon-color-path(#048119);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--error {
+	@include icon-color-circle-stroke(#d90400);
+	@include icon-color-path(#d90400);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__alert-subtle--warning {
+	@include icon-color-circle-stroke(#ffbf0d);
+	@include icon-color-path(#ffbf0d);
+
+	&.disabled {
+		@include icon-color-circle-stroke(#ff5755);
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## alert ##############################################
+
+.stencil-icon__alert--primary {
+	@include icon-color-path-Shape(
+		#000000,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.aux-theme-dark .stencil-icon__alert--primary {
+	@include icon-color-path-Combined-Shape(
+		#fff6f6,
+		#fff6f6
+	);
+}
+
+.stencil-icon__alert--secondary {
+	@include icon-color-path-Shape(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.stencil-icon__alert--boxed {
+	@include icon-color-path-Shape(
+		#000000,
+		#bc0300
+	);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__alert--non-action {
+	@include icon-color-path-Shape(#ff2825);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.stencil-icon__alert--primary-button {
+	@include icon-color-path-Shape(#ffffff);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.stencil-icon__alert--secondary-button {
+	@include icon-color-path-Shape(#bc0300);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.stencil-icon__alert--secondary-button-hover {
+	@include icon-color-path-Shape(#ffffff);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.stencil-icon__alert--tertiary-button {
+	@include icon-color-path-Shape(#bc0300);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.stencil-icon__alert--error {
+	@include icon-color-path-Shape(#d90400);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.stencil-icon__alert--warning {
+	@include icon-color-path-Shape(#ffbf0d);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+	}
+}
+
+.stencil-icon__alert--primary-danger-button {
+	@include icon-color-path-Shape(#ffffff);
+	@include icon-color-path-Combined-Shape(#d90400);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+		@include icon-color-path-Combined-Shape(#000000);
+	}
+}
+
+.stencil-icon__alert--secondary-danger-button {
+	@include icon-color-path-Shape(#d90400);
+	@include icon-color-path-Combined-Shape(#ffffff);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+		@include icon-color-path-Combined-Shape(#000000);
+	}
+}
+
+.stencil-icon__alert--tertiary-danger-button {
+	@include icon-color-path-Shape(#d90400);
+	@include icon-color-path-Combined-Shape(#ffffff);
+
+	&.disabled {
+		@include icon-color-path-Shape(#ff5755);
+		@include icon-color-path-Combined-Shape(#000000);
+	}
+}
+
+//################################################## align-center ##############################################
+
+.stencil-icon__align-center--primary {
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-center--secondary {
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-center--boxed {
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__align-center--non-action {
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-center--primary-button {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-center--secondary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-center--secondary-button-hover {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-center--tertiary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## align-left ##############################################
+
+.stencil-icon__align-left--primary {
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-left--secondary {
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-left--boxed {
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__align-left--non-action {
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-left--primary-button {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-left--secondary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-left--secondary-button-hover {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-left--tertiary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## align-right ##############################################
+
+.stencil-icon__align-right--primary {
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-right--secondary {
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-right--boxed {
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__align-right--non-action {
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-right--primary-button {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-right--secondary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-right--secondary-button-hover {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__align-right--tertiary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## analysis-result ##############################################
+
+.stencil-icon__analysis-result--primary {
+	@include icon-color-path(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__analysis-result--secondary {
+	@include icon-color-path(#bc0300, #bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__analysis-result--boxed {
+	@include icon-color-path(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__analysis-result--non-action {
+	@include icon-color-path(#ff2825);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__analysis-result--primary-button {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__analysis-result--secondary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__analysis-result--secondary-button-hover {
+	@include icon-color-path(#ffffff);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+.stencil-icon__analysis-result--tertiary-button {
+	@include icon-color-path(#bc0300);
+
+	&.disabled {
+		@include icon-color-path(#ff5755);
+	}
+}
+
+//################################################## arrow-down ##############################################
+
+.stencil-icon__arrow-down--primary {
+	@include icon-color-polyline-stroke(
+		#000000,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-down--secondary {
+	@include icon-color-polyline-stroke(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-down--boxed {
+	@include icon-color-polyline-stroke(
+		#000000,
+		#bc0300
+	);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__arrow-down--non-action {
+	@include icon-color-polyline-stroke(#ff2825);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-down--primary-button {
+	@include icon-color-polyline-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-down--secondary-button {
+	@include icon-color-polyline-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-down--secondary-button-hover {
+	@include icon-color-polyline-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-down--tertiary-button {
+	@include icon-color-polyline-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+//################################################## arrow-dropdown-up ##############################################
+
+.stencil-icon__arrow-dropdown-up--primary {
+	@include icon-color-polygon(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--secondary {
+	@include icon-color-polygon(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--boxed {
+	@include icon-color-polygon(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--non-action {
+	@include icon-color-polygon(#ff2825);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--primary-button {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--secondary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--secondary-button-hover {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--tertiary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--success {
+	@include icon-color-polygon(#048119);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown-up--error {
+	@include icon-color-polygon(#d90400);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+//################################################## arrow-dropdown ##############################################
+
+.stencil-icon__arrow-dropdown--primary {
+	@include icon-color-polygon(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown--secondary {
+	@include icon-color-polygon(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown--boxed {
+	@include icon-color-polygon(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__arrow-dropdown--non-action {
+	@include icon-color-polygon(#ff2825);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown--primary-button {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown--secondary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown--secondary-button-hover {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown--tertiary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown--success {
+	@include icon-color-polygon(#048119);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-dropdown--error {
+	@include icon-color-polygon(#d90400);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+//################################################## arrow-left ##############################################
+
+.stencil-icon__arrow-left--primary {
+	@include icon-color-polyline-stroke(
+		#000000,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-left--secondary {
+	@include icon-color-polyline-stroke(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-left--boxed {
+	@include icon-color-polyline-stroke(
+		#000000,
+		#bc0300
+	);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__arrow-left--non-action {
+	@include icon-color-polyline-stroke(#ff2825);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-left--primary-button {
+	@include icon-color-polyline-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-left--secondary-button {
+	@include icon-color-polyline-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-left--secondary-button-hover {
+	@include icon-color-polyline-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-left--tertiary-button {
+	@include icon-color-polyline-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+//################################################## arrow-right ##############################################
+
+.stencil-icon__arrow-right--primary {
+	@include icon-color-polyline-stroke(
+		#000000,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-right--secondary {
+	@include icon-color-polyline-stroke(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-right--boxed {
+	@include icon-color-polyline-stroke(
+		#000000,
+		#bc0300
+	);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__arrow-right--non-action {
+	@include icon-color-polyline-stroke(#ff2825);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-right--primary-button {
+	@include icon-color-polyline-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-right--secondary-button {
+	@include icon-color-polyline-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-right--secondary-button-hover {
+	@include icon-color-polyline-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-right--tertiary-button {
+	@include icon-color-polyline-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+//################################################## arrow-up ##############################################
+
+.stencil-icon__arrow-up--primary {
+	@include icon-color-polyline-stroke(
+		#000000,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-up--secondary {
+	@include icon-color-polyline-stroke(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-up--boxed {
+	@include icon-color-polyline-stroke(
+		#000000,
+		#bc0300
+	);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__arrow-up--non-action {
+	@include icon-color-polyline-stroke(#ff2825);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-up--primary-button {
+	@include icon-color-polyline-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-up--secondary-button {
+	@include icon-color-polyline-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-up--secondary-button-hover {
+	@include icon-color-polyline-stroke(#ffffff);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+.stencil-icon__arrow-up--tertiary-button {
+	@include icon-color-polyline-stroke(#bc0300);
+
+	&.disabled {
+		@include icon-color-polyline-stroke(#ff5755);
+	}
+}
+
+//################################################## back-arrow ##############################################
+
+.stencil-icon__back-arrow--primary {
+	@include icon-color-polygon(#000000, #bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__back-arrow--secondary {
+	@include icon-color-polygon(
+		#bc0300,
+		#bc0300
+	);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__back-arrow--boxed {
+	@include icon-color-polygon(#000000, #bc0300);
+	background-color: #fff6f6;
+
+	&:hover {
+		background-color: #ff8a89;
+	}
+
+	&:active {
+		background-color: #ff8a89;
+	}
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+		background-color: #fff6f6;
+	}
+}
+
+.stencil-icon__back-arrow--non-action {
+	@include icon-color-polygon(#ff2825);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__back-arrow--primary-button {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__back-arrow--secondary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__back-arrow--secondary-button-hover {
+	@include icon-color-polygon(#ffffff);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
+	}
+}
+
+.stencil-icon__back-arrow--tertiary-button {
+	@include icon-color-polygon(#bc0300);
+
+	&.disabled {
+		@include icon-color-polygon(#ff5755);
 	}
 }

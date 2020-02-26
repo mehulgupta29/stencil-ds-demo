@@ -2,17 +2,18 @@
 	@return ($pixel/16) + rem;
 }
 
+
 //defaults to primary type
 @mixin type(
-	$background-color: #0000f3,
+	$background-color: #bc0300,
 	$color: #ffffff,
 	$border-color: null,
-	$hover-background-color: #6e87ff,
+	$hover-background-color: #d90400,
 	$hover-text-color: #ffffff,
-	$active-background-color: #0000c3,
+	$active-background-color: #8c0200,
 	$active-text-color: #ffffff,
-	$disabled-background-color: #dbdde1,
-	$disabled-text-color: #a5aab3,
+	$disabled-background-color: #ff8a89,
+	$disabled-text-color: #ff2825,
 	$disabled-border-color: null
 ) {
 	background-color: $background-color;
@@ -53,6 +54,7 @@
 		}
 
 		color: $disabled-text-color;
+
 	}
 }
 
@@ -92,8 +94,8 @@
 }
 
 //defaults to regular size
-@mixin size($min-height: 32, $padding: 16, $font-size: 13, $icon-padding: 8) {
-	min-height: pixel-to-rem($min-height);
+@mixin size($height: 32, $padding: 16, $font-size: 13, $icon-padding: 8) {
+	height: pixel-to-rem($height);
 	padding: pixel-to-rem(0) pixel-to-rem($padding);
 	font-size: pixel-to-rem($font-size);
 
@@ -108,44 +110,44 @@
 
 .stencil-button__primary {
 	@include type(
-		#0000f3,
+		#bc0300,
 		#ffffff,
 		null,
-		#6e87ff,
+		#d90400,
 		#ffffff,
-		#0000c3,
+		#8c0200,
 		#ffffff,
-		#dbdde1,
-		#a5aab3
+		#ff8a89,
+		#ff2825
 	);
 }
 
 .stencil-button__secondary {
 	@include type(
 		#ffffff,
-		#0000f3,
-		#0000f3,
-		#6e87ff,
+		#bc0300,
+		#bc0300,
+		#d90400,
 		#ffffff,
-		#0000c3,
+		#8c0200,
 		#ffffff,
 		#ffffff,
-		#a5aab3,
-		#dbdde1
+		#ff2825,
+		#ff8a89
 	);
 }
 
 .stencil-button__tertiary {
 	@include type(
 		rgba(0, 0, 0, 0),
-		#0000f3,
+		#bc0300,
 		null,
-		#f5f8ff,
-		#0000f3,
-		#e6ecff,
-		#0000f3,
+		#fff6f6,
+		#bc0300,
+		#ff8a89,
+		#bc0300,
 		rgba(0, 0, 0, 0),
-		#a5aab3,
+		#ff2825,
 		null
 	);
 }
@@ -159,8 +161,8 @@
 		#ffffff,
 		#bc0300,
 		#ffffff,
-		#dbdde1,
-		#a5aab3,
+		#ff8a89,
+		#ff2825,
 		null
 	);
 }
@@ -174,9 +176,9 @@
 		#ffffff,
 		#bc0300,
 		#ffffff,
-		#dbdde1,
-		#a5aab3,
-		#dbdde1
+		#ff8a89,
+		#ff2825,
+		#ff8a89
 	);
 }
 
@@ -190,7 +192,7 @@
 		#ffbbbb,
 		#d90400,
 		rgba(0, 0, 0, 0),
-		#a5aab3,
+		#ff2825,
 		undefined
 	);
 }
@@ -217,10 +219,6 @@
 		height: 1rem;
 		width: 1rem;
 	}
-
-	&:disabled {
-		cursor: default;
-	}
 }
 
 .stencil-button__content {
@@ -239,6 +237,9 @@
 
 .stencil-button__xsmall {
 	@include size(16, 4, 11, null);
+	line-height: pixel-to-rem(16);
+	padding-top: pixel-to-rem(1);
+	padding-bottom: pixel-to-rem(1);
 }
 
 .stencil-button__small {
